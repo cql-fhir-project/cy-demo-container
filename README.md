@@ -19,7 +19,7 @@ This Docker container for demonstrating purpose only!
 1. `docker-compose up`
 
 Now you should see output that demonstrates 2 stages:
-* `translation` all the cql files in `./measure-packages/DiabeticFootExam-1.0.0` (by default)  
+* `translation` of all the cql files in `./measure-packages/DiabeticFootExam-1.0.0` (by default)  
 * `execution` against diabetic mock bundles (by default)  
     
 #### How to change default behaviour:
