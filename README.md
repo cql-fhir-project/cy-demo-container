@@ -27,17 +27,18 @@ Now you should see output that demonstrates 2 stages:
 1. Create a new sub-folder in `measure-packages`. For example, `BCS_Logic-0.9.000`
 1. Copy `BCS_Logic-0.9.000.cql` file as `main.cql` into `BCS_Logic-0.9.000` folder.
 1. Copy all included libraries (FHIR helpers) into created above folder `BCS_Logic-0.9.000` 
-(since now I call the `BCS_Logic-0.9.000` as measure package)
+(since now I call the `BCS_Logic-0.9.000` as measure package).
 Be careful, follow the convention naming fhir-helper libraries. See `main.cql` file for a clue. 
 For instance, `include FHIRHelpers version '4.0.1' called FHIRHelpers` - means that there HAS to be 
-`FHIRHelpers-4.0.1.cql` included as the measure package dependency.
+the `FHIRHelpers-4.0.1.cql` file included as a measure package dependency.
 1. Include Value Set files into `vsac_chache`. 
 1. To activate new measure package 
 change `MEASURE_PACKAGE` variable from `DiabeticFootExam-1.0.0` to `BCS_Logic-0.9.000` in `docker-compose.yml` file.
 
 ####### Increasing population
 1. If you need include some more population, then use [Synthea](https://github.com/synthetichealth/synthea)
-to generate some and save into `bundles` folder or simply [download it](https://storage.googleapis.com/synthea-public/synthea_sample_data_fhir_r4_sep2019.zip). 
+to generate some or  [download it](https://storage.googleapis.com/synthea-public/synthea_sample_data_fhir_r4_sep2019.zip) 
+and save into `bundles` folder. 
 1. To activate synthetic population uncomment `- ./bundles/:/usr/src/app/bundles/` line in `docker-compose.yml` file.
 1. Finally, run `docker-compose up` again.
 
