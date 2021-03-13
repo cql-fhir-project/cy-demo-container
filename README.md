@@ -7,6 +7,9 @@ This Docker container for demonstrating and testing purpose only!
 
 ##### Quick start
 1. Install Docker and docker-compose on your PC:
+    * on your Windows:
+    1. Google how to install Docker and docker-compose on Windows
+    (it's pretty simple)
     * on Ubuntu:
     1. $ `curl -fsSL https://get.docker.com | bash`
     1. $ `systemctl enable docker.service`
