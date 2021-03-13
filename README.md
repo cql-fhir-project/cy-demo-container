@@ -24,8 +24,8 @@ Now you should see output that demonstrates 2 stages:
     
 #### How to change default behaviour:
 ####### Adding new measure package
-1. Create a new sub-folder in `measure-packages`. For example `BCS_Logic-0.9.000`
-copy `BCS_Logic-0.9.000.cql` file as `main.cql`.
+1. Create a new sub-folder in `measure-packages`. For example, `BCS_Logic-0.9.000`
+1. Copy `BCS_Logic-0.9.000.cql` file as `main.cql` into `BCS_Logic-0.9.000` folder.
 1. Copy all included libraries (FHIR helpers) into created above folder `BCS_Logic-0.9.000` 
 (since now I call `BCS_Logic-0.9.000` as the measure package)
 Be careful, follow the convention naming fhir-helper libraries. See `main.cql` file for a clue. 
